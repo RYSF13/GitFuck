@@ -48,12 +48,12 @@ jobs:
           current_time=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
           count=0
-          while [ $count -lt 1000 ]; do
+          while [ $count -lt 25000 ]; do
             commit_id=$(cat /proc/sys/kernel/random/uuid)
             total_commits=$(git rev-list --count HEAD)
 
             echo "  _      _         " >> README.yml
-            echo " / `._/_/_`   _  /_" >> README.yml
+            echo " / \`._/_/_\`   _  /_" >> README.yml
             echo "/_;/ / /  /_//_ /\ " >> README.yml       
             echo "----------------------------------------------------" >> README.yml
             echo "Commit ID: $commit_id" >> README.yml
