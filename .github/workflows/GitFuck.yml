@@ -48,7 +48,7 @@ jobs:
           current_time=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
           count=0
-          while [ $count -lt 25000 ]; do
+          while [ $count -lt 2500 ]; do
             commit_id=$(cat /proc/sys/kernel/random/uuid)
             total_commits=$(git rev-list --count HEAD)
             rm README.yml
