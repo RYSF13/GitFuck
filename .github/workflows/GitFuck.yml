@@ -51,7 +51,7 @@ jobs:
           while [ $count -lt 25000 ]; do
             commit_id=$(cat /proc/sys/kernel/random/uuid)
             total_commits=$(git rev-list --count HEAD)
-
+            rm README.yml
             echo "  _      _         " >> README.yml
             echo " / \`._/_/_\`   _  /_" >> README.yml
             echo "/_;/ / /  /_//_ /\ " >> README.yml       
